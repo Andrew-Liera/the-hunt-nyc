@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    margin: 20px;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+
+}
+.logo {
+    margin-right: 10%;
+    font-family: 'Krona One', sans-serif;
+}
+#nyc {
+    color: #f37b5f;
+}
+.tabs {
+    margin: 10px;
+    justify-content: space-between;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 55%;
+}
+#navbtn {
+    color: #353535;
+    background-color: #f37b5f;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+
+}
+.hero {
+    height: 65vh;
+}
+#heroWords {
+    display: block;
+    margin: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 4rem;
+}
+#heropar {
+    text-align: center;
+    margin: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.5rem;
+
+}
+.btndiv {
+    position: absolute;
+    margin: auto;
+    left: 45%;
+    top: 60%;   
+}
+#herobtn {
+    color: #353535;
+    background-color: #f37b5f;
+    border-radius: 15px;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+
+}
+.featured {
+    background-color: #274c62;
+    height:400px;
+}
+.feature1 {
+    height: 200px;
+    width: 75%;
+    margin : 50px auto auto auto;
+    padding: 10px;
+    background-color: #f37b5f;
+}
+#featurehead {
+    text-align: center;
+    margin: 15px;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    background-color: #274c62;
+    font-size: 2.5rem;
+}
+.theHunt {
+    font-family: 'Krona One', sans-serif;
+}
+#the {
+    color: #f46a13;
+}
+#hunt {
+    color: #F4BE86;
+}
+.attribute {
+    display: flex;
+    margin: 20px;
+    height: 1000px;
+    border: 1px solid black;
+}
+.att-pic {
+    height: 300px;
+    width: 40%;
+    margin-right: 10%;
+    border: 1px solid black;
+
+}
+.att-words {
+    margin-top: 20%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow',sans-serif;
+    height: 100%;
+    border: 1px solid black;
+
+}
+.att-words h1 {
+    font-size: 2.5rem;
+    color: #274c62;
+
+}
+.att-words p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.heroImage {
+    height: 700px;
+    width: 75%;
+}
+.footer {
+    background-color: #274c62;
+    height: 250px;
+}
