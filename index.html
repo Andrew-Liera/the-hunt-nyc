@@ -8,33 +8,35 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&family=Krona+One&display=swap');
         </style>
-    <title>Document</title>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>The Hunt NYC</title>
 </head>
 <body>
 <!-- NAV SECTION -->
 <nav class="navbar">
     <div class="logo">
-        <h1>thehunt<span id="nyc">nyc</span></h1>
+        <h1>thehunt<span id="nyc">NYC</span></h1>
     </div>
     <div class="tabs">
-        <a>tab 1</a>
-        <a>tab 2</a>
-        <a>tab 3</a>
+            <a href="#">Contact</a>
+            <a href="#">FAQs</a>   
     </div>
-    <div class="btn"><button id="navbtn">Click Me!</button></div>
+    <div class="btn"><button id="navbtn" onclick="myFunction()">Download</button></div>
 </nav>
 <!-- HERO SECTION -->
 <section class="hero">
-    <h1 id="heroWords">Get off the tour bus and into the City!</h1>
-    <p id="heropar">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi veritatis tempora consectetur minus magnam ut quibusdam ex quidem. Praesentium saepe nisi ut eveniet! Quos totam est tempore voluptates? Consequatur!</p>
+    <img id="heroImg" src="https://i.pinimg.com/originals/86/69/0e/86690ed35e31e7f6a680e07ba876c38c.png">
+    <h1 id="heroWords">Step <i>off</i> the tour bus and <i>into</i> the City!</h1>
+    
     <div class="btndiv">
         <button id="herobtn">LEARN MORE</button>
     </div>
 </section>
 <!-- FEATURED SECTION -->
 <section class="featured">
-    <h1 id="featurehead">If you're not playing <span id="the" class="theHunt">the</span><span class="theHunt" id="hunt">hunt</span>, you're only getting half the story!</h1>
-
+    <h1 id="featurehead">If you're not playing <span id="the" class="theHunt">the</span><span class="theHunt" id="hunt">hunt</span> you're only getting half the story!</h1>
+    <p id="heropar">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi veritatis tempora consectetur minus magnam ut quibusdam ex quidem. Praesentium saepe nisi ut eveniet! Quos totam est tempore voluptates? Consequatur!</p>
     <div class="feature1">
     </div>
 </section>

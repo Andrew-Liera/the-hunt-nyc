@@ -10,45 +10,72 @@
     justify-content: center; 
     align-items: center;
     font-family: 'Barlow', sans-serif;
-
+    height: 75%;
 }
 .logo {
-    margin-right: 10%;
+    margin-right: 5%;
     font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
 }
 #nyc {
-    color: #f37b5f;
+    color: #274c62;
+    font-size: 1rem;
 }
 .tabs {
-    margin: 10px;
-    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
+a {
+    text-decoration: none;
+    margin: 0 25px;
+    display: inline-block;
+    color: #274c62;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+a:hover {
+    color: #f46a13;
+}
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-left: 55%;
 }
 #navbtn {
-    color: #353535;
-    background-color: #f37b5f;
+    color: white;
+    background-color: #f46a13;
     border-radius: 15px;
     padding: 10px;
-    width: 100px;
+    width: 125px;
     border: none;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
-
+    position: absolute;
+    outline: none;
+}
+#navbtn:hover {
+    color: black;
+    border: 1px solid #f46a13;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
 }
 .hero {
     height: 65vh;
+    
 }
 #heroWords {
     display: block;
     margin: 50px;
     font-family: 'Barlow', sans-serif;
     font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 50px;
 }
+
 #heropar {
     text-align: center;
     margin: 50px;
@@ -59,38 +86,44 @@
 .btndiv {
     position: absolute;
     margin: auto;
-    left: 45%;
-    top: 60%;   
+    left: 42.5%;
+    top: 55%;   
 }
 #herobtn {
-    color: #353535;
-    background-color: #f37b5f;
+    color: white;
+    background-color: #f46a13;
     border-radius: 15px;
     padding: 10px;
-    width: 150px;
+    width: 175px;
     border: none;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
+}
+#herobtn:hover {
+    color: black;
+    border: 1px solid #f46a13;
+    background-color: white;
 
+}
+#heroImg {
+    background-size: cover;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
 }
 .featured {
     background-color: #274c62;
     height:400px;
 }
-.feature1 {
-    height: 200px;
-    width: 75%;
-    margin : 50px auto auto auto;
-    padding: 10px;
-    background-color: #f37b5f;
-}
 #featurehead {
     text-align: center;
-    margin: 15px;
+    margin-top: 25px;
     font-family: 'Barlow', sans-serif;
     color: white;
     background-color: #274c62;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding: 25px 75px;
 }
 .theHunt {
     font-family: 'Krona One', sans-serif;
@@ -105,13 +138,11 @@
     display: flex;
     margin: 20px;
     height: 1000px;
-    border: 1px solid black;
 }
 .att-pic {
     height: 300px;
     width: 40%;
     margin-right: 10%;
-    border: 1px solid black;
 
 }
 .att-words {
@@ -121,7 +152,6 @@
     justify-content: center;
     font-family: 'Barlow',sans-serif;
     height: 100%;
-    border: 1px solid black;
 
 }
 .att-words h1 {
@@ -141,3 +171,48 @@
     background-color: #274c62;
     height: 250px;
 }
+@media only screen and (max-width: 600px) {
+    #navbtn {
+      display: none;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    a {
+        display: none;
+    }
+    #heroWords {
+        font-size: 2.25rem;
+    }
+    .btndiv {
+        left: 35%;
+    }
+    .attribute {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .att-pic {
+        margin-left:10%;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .att-words h1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        font-size: 2.25rem;
+    }
+    .att-words p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    #featurehead {
+        font-size: 2.5rem;
+    }
+    .featured {
+        height: 100%;
+    }
+  }
