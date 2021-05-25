@@ -74,6 +74,7 @@ a:hover {
     font-weight: 400;
     text-align: center;
     padding: 0 50px;
+    color: #274c62;
 }
 
 #heropar {
@@ -124,6 +125,7 @@ a:hover {
     background-color: #274c62;
     font-size: 3rem;
     padding: 25px 75px;
+    font-weight:  400;
 }
 .theHunt {
     font-family: 'Krona One', sans-serif;
@@ -137,7 +139,7 @@ a:hover {
 .attribute {
     display: flex;
     margin: 20px;
-    height: 1000px;
+    height: 900px;
 }
 .att-pic {
     height: 300px;
@@ -162,6 +164,63 @@ a:hover {
 .att-words p {
     font-size: 1.5rem;
     margin-top: 20px;
+}
+.att2-words {
+    margin-top: 20%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow',sans-serif;
+    height: 100%;
+}
+.att2-words h1 {
+    font-size: 2.5rem;
+    color: #274c62;
+
+}
+.att2-words p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.a2bute {
+    flex-direction: row-reverse;
+}
+.att3-words {
+    margin-top: 20%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow',sans-serif;
+    height: 100%;
+}
+.att3-words h1 {
+    font-size: 2.5rem;
+    color: #274c62;
+
+}
+.att3-words p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.att4-words {
+    margin-top: 20%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Barlow',sans-serif;
+    height: 100%;
+}
+.att4-words h1 {
+    font-size: 2.5rem;
+    color: #274c62;
+
+}
+.att4-words p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+.a4bute {
+    flex-direction: row-reverse;
 }
 .heroImage {
     height: 700px;
@@ -205,6 +264,42 @@ a:hover {
         font-size: 2.25rem;
     }
     .att-words p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .att2-words h1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        font-size: 2.25rem;
+    }
+    .att2-words p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .att3-words h1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        font-size: 2.25rem;
+    }
+    .att3-words p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .att4-words h1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+        font-size: 2.25rem;
+    }
+    .att4-words p {
         font-size: 1.5rem;
         text-align: center;
         padding-bottom: 10px;
