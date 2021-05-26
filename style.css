@@ -6,16 +6,35 @@
 
 .navbar {
     display: flex;
-    margin: 20px;
+    margin: 0 40px;
     justify-content: center; 
     align-items: center;
     font-family: 'Barlow', sans-serif;
-    height: 75%;
+    height: 75px;
 }
 .logo {
-    margin-right: 5%;
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
     font-size: 1.5rem;
+    height: 100%;
+    margin-right: 5%;
+
+}
+#logo {
+    display: flex;
+
+    height: 100%;
+
+}
+#off, #into {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #008c95;
+    /* font-size: 4rem; */
+}
+/* #bus {
+    border-bottom: 3px solid #f46a13;
+} */
+#hamburger {
+    display: none;
 }
 #nyc {
     color: #274c62;
@@ -25,11 +44,12 @@
     display: flex;
     width: 100%;
     height: 100%;
+    align-items: center;
+
 }
 a {
     text-decoration: none;
     margin: 0 25px;
-    display: inline-block;
     color: #274c62;
     font-size: 1.25rem;
     font-weight: 200;
@@ -63,32 +83,33 @@ a:hover {
     outline: none;
 }
 .hero {
-    height: 65vh;
-    
+    height: 75vh;    
 }
 #heroWords {
     display: block;
-    margin: 50px;
     font-family: 'Barlow', sans-serif;
-    font-size: 4rem;
-    font-weight: 400;
+    font-size: 3.5rem;
+    margin: 50px;
+    font-weight: bold;
     text-align: center;
-    padding: 0 50px;
-    color: #274c62;
+    padding: 0 60px;
+    color: #f46a13;
 }
 
 #heropar {
-    text-align: center;
-    margin: 50px;
     font-family: 'Barlow', sans-serif;
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    color: white;
+    padding: 15px;
 
 }
 .btndiv {
     position: absolute;
     margin: auto;
-    left: 42.5%;
-    top: 55%;   
+    left: 45%;
+    top: 155%;   
 }
 #herobtn {
     color: white;
@@ -99,6 +120,7 @@ a:hover {
     border: none;
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
+
 }
 #herobtn:hover {
     color: black;
@@ -108,62 +130,59 @@ a:hover {
 }
 #heroImg {
     background-size: cover;
-    height: 90%;
+    height: 100%;
     width: 100%;
     z-index: -1;
     position: absolute;
 }
 .featured {
-    background-color: #274c62;
     height:400px;
+    background-color: #274c62;
 }
 #featurehead {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 150px;
     font-family: 'Barlow', sans-serif;
     color: white;
-    background-color: #274c62;
     font-size: 3rem;
     padding: 25px 75px;
     font-weight:  400;
 }
 .theHunt {
-    font-family: 'Krona One', sans-serif;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 #the {
     color: #f46a13;
 }
 #hunt {
-    color: #F4BE86;
+    color: #eeecd5;
 }
 .attribute {
     display: flex;
     margin: 20px;
-    height: 900px;
+    height: 875px;
 }
-.att-pic {
-    height: 300px;
-    width: 40%;
-    margin-right: 10%;
 
-}
 .att-words {
-    margin-top: 20%;
+    margin: 20% 0 0 0;
     padding: 15px;
     align-items: center;
     justify-content: center;
     font-family: 'Barlow',sans-serif;
     height: 100%;
-
+    width: 75%;
 }
 .att-words h1 {
     font-size: 2.5rem;
     color: #274c62;
+    text-align: left;
+    width: 90%;
+    
+
 
 }
 .att-words p {
     font-size: 1.5rem;
-    margin-top: 20px;
 }
 .att2-words {
     margin-top: 20%;
@@ -174,17 +193,31 @@ a:hover {
     height: 100%;
 }
 .att2-words h1 {
+    text-align: left;
+
     font-size: 2.5rem;
     color: #274c62;
-
+    width: 90%;
 }
 .att2-words p {
     font-size: 1.5rem;
     margin-top: 20px;
+    width: 90%;
 }
+.att-pic2 {
+    width: 60%;
+}
+/* .a1bute {
+    background-image: linear-gradient(#274c62, #008c95);
+
+} */
 .a2bute {
     flex-direction: row-reverse;
+    /* background-image: linear-gradient(#008c95, #8EC8BE); */
 }
+/* .at3bute {
+    background-color: linear-gradient(#8ec8be, #F5F4CB);
+} */
 .att3-words {
     margin-top: 20%;
     padding: 15px;
@@ -196,11 +229,17 @@ a:hover {
 .att3-words h1 {
     font-size: 2.5rem;
     color: #274c62;
+    text-align: left;
+    width: 90%;
 
 }
 .att3-words p {
     font-size: 1.5rem;
     margin-top: 20px;
+    width: 90%;
+}
+.att-pic3 {
+    width: 75%;
 }
 .att4-words {
     margin-top: 20%;
@@ -213,49 +252,159 @@ a:hover {
 .att4-words h1 {
     font-size: 2.5rem;
     color: #274c62;
+    text-align: left;
+    width: 90%;
 
 }
 .att4-words p {
     font-size: 1.5rem;
     margin-top: 20px;
 }
+.att-pic4 {
+    width: 75%;
+}
 .a4bute {
     flex-direction: row-reverse;
+    /* background-color: linear-gradient(#F5F4CB, #F3BD83); */
 }
 .heroImage {
     height: 700px;
-    width: 75%;
+    width: 85%;
 }
-.footer {
+.joinNow {
+    height: 400px;
     background-color: #274c62;
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.joinNow p, h1 {
+    text-align: center;
+    transform: translateY(-50%);
+    font-family: 'barlow', sans-serif;
+    color: white;
+}
+.joinNow h1 {
+    font-size: 3.5rem;
+}
+.joinNow p {
+    font-size: 2rem;
+    font-weight: 200;
+
+}
+#fifteen {
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #f46a13;
+    font-size: 2.5rem;
+}
+#endbtn {
+    color: white;
+    background-color: #f46a13;
+    border-radius: 15px;
+    padding: 10px;
+    width: 175px;
+    border: none;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+}
+#endbtn:hover {
+    color: black;
+    border: 1px solid #f46a13;
+    background-color: white;
+    position: relative;
+
+}
+.btndiv2 {
+    margin: auto;
+    position: absolute;
+    left: 45%;
+    transform: translateY(250%);
+
+}
+#footer {
+    height: 300px;
+    background-color: #eeecd5;
+}
+.footerWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 2.5rem;
+    font-family: 'Barlow', sans-serif;
+    color: #274c62;
+}
+.symbols {
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+}
+#rights {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#fun {
+    text-align: center;
+    margin: 50px;
+    font-size: 1.5rem;
+    font-family: 'Barlow', sans-serif;
+    color: #274c62;
+}
+#insta, #git, #fb, #pint {
+    height: 50px;
+    margin-top: 25%;
+    padding-bottom: 15px;
+}
+#pint {
+    margin-left: 7px;
 }
 @media only screen and (max-width: 600px) {
     #navbtn {
       display: none;
     }
-    .logo {
-        font-size: 1rem;
+    #logo {
+        transform: scale(0.75);
+    }
+    #heroImg {
+        position:absolute;
+        width:100%;
+    }
+    #hamburger {
+        display: flex;
+        align-items: center;
+        justify-items: flex-end;
+        cursor: pointer;
     }
     a {
         display: none;
     }
     #heroWords {
         font-size: 2.25rem;
+        padding:0;
+        font-weight: 900;
     }
     .btndiv {
-        left: 35%;
+        left: 25%;
+        top: 145%;
+    }
+    #herobtn {
+        width: 250px;
     }
     .attribute {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 35%;
     }
-    .att-pic {
-        margin-left:10%;
+    .att-pic, .att-pic2, .att-pic3, .att-pic4 {
+        margin-left:5%;
         padding: 0;
         height: 100%;
         width: 100%;
     }
+
     .att-words h1 {
         display: flex;
         flex-direction: column;
@@ -304,10 +453,38 @@ a:hover {
         text-align: center;
         padding-bottom: 10px;
     }
+    .mobileWords {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    
     #featurehead {
         font-size: 2.5rem;
     }
     .featured {
         height: 100%;
+        margin: 0;
+    }
+    .joinNow {
+        width: 100%;
+    }
+    .joinNow h1 {
+        font-size: 3rem;
+    }
+    .joinNow p {
+        font-size: 1.5rem;
+    }
+    .btndiv2 {
+        left: 25%;
+    }
+    #endbtn {
+        width: 250px;
+    }
+    #insta, #git, #fb, #pint {
+        height: 50px;
+        margin-top: 27.5%;
+        padding-bottom: 15px;
     }
   }

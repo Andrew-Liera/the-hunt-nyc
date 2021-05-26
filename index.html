@@ -8,82 +8,110 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&family=Krona+One&display=swap');
         </style>
+     <style>
+            @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+            </style>
     <script src="index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>The Hunt NYC</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 <!-- NAV SECTION -->
 <nav class="navbar">
     <div class="logo">
-        <h1>thehunt<span id="nyc">NYC</span></h1>
+        <img id="logo" src="images/logo.png">
+        <!-- <h1>the hunt<span id="nyc">NYC</span></h1> -->
     </div>
     <div class="tabs">
-            <a href="#">Contact</a>
+            <a href="#footer">Contact</a>
             <a href="#">FAQs</a>   
     </div>
     <div class="hamburger">
-
+        <img src="images/hamburger.png" id="hamburger">
     </div>
-    <div class="btn"><button id="navbtn" onclick="myFunction()">DOWNLOAD</button></div>
+    <div class="btn"><button id="navbtn" onclick="myFunction()">Join The Hunt</button></div>
 </nav>
 <!-- HERO SECTION -->
 <section class="hero">
-    <img id="heroImg" src="https://i.pinimg.com/originals/86/69/0e/86690ed35e31e7f6a680e07ba876c38c.png">
-    <h1 id="heroWords">Step <i>off</i> the tour bus and <i>into</i> the City!</h1>
+   <!-- <img id="heroImg" src="https://i.pinimg.com/originals/86/69/0e/86690ed35e31e7f6a680e07ba876c38c.png"> -->
+   <img id="heroImg" src="images/jumbo2.png">
+    <h1 id="heroWords">Step <span id="off">off</span> the tour <span id="bus">bus</span> and <span id="into">into</span> the City!</h1>
     
     <div class="btndiv">
-        <button id="herobtn">LEARN MORE</button>
+        <button id="herobtn" onclick="myFunction()">Join The Hunt</button>
     </div>
+
 </section>
 <!-- FEATURED SECTION -->
 <section class="featured">
-    <h1 id="featurehead">If you're not playing <span id="the" class="theHunt">the</span><span class="theHunt" id="hunt">hunt</span> you're only getting half the story!</h1>
-    <p id="heropar">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi veritatis tempora consectetur minus magnam ut quibusdam ex quidem. Praesentium saepe nisi ut eveniet! Quos totam est tempore voluptates? Consequatur!</p>
+    <h1 id="featurehead">If you're not playing <span id="the" class="theHunt">the </span><span class="theHunt" id="hunt">hunt</span> you're only getting half the story!</h1>
+    <p id="heropar">Explore New York like never before with our city-wide, fully customizable scavenger hunting experience.</p>
     <div class="feature1">
     </div>
 </section>
-<section class="attribute">
+<!-- ATTRIBUTE START -->
+<section class="attribute a1bute">
     <div class="att-pic">
-        <img class="heroImage" src="images/home.png">
+        <img class="heroImage" src="images/Explore_Screen.PNG">
     </div>
-    <div class="att-words">
-        <h1>This is a heading for a description</h1>
-        <p>And these are all the lil details about this feature!</p>
+    <div class="att-words mobileWords">
+        <h1>Discover your new favorite part of town</h1>
+        <p>Whether you're a first-time visitor or a lifelong New Yorker, in a group or on your own, personalize your day out on the town by choosing from our recommended hunts, or even make your very own!</p>
     </div>
 </section>
 <!-- FEATURED 2 -->
 <section class="attribute a2bute">
-    <div class="att-pic">
-        <img class="heroImage" src="images/home.png">
+    <div class="att-pic2">
+        <img class="heroImage" src="images/Checklist_Screen.PNG">
     </div>
-    <div class="att2-words">
-        <h1>This is a heading for a description</h1>
-        <p>And these are all the lil details about this feature!</p>
+    <div class="att2-words mobileWords">
+        <h1>Collect badges as you explore at your own pace</h1>
+        <p>As you make your way to each destination, you can keep check of your progress so that you never miss a beat (or badge!) along the way.</p>
     </div>
 </section>
 <!-- FEATURED 3 -->
 <section class="attribute at3bute">
-    <div class="att-pic">
-        <img class="heroImage" src="images/home.png">
+    <div class="att-pic3">
+        <img class="heroImage" src="images/Trivia_Challenge_Screen.PNG">
     </div>
-    <div class="att3-words">
-        <h1>This is a heading for a description</h1>
-        <p>And these are all the lil details about this feature!</p>
+    <div class="att3-words mobileWords">
+        <h1>Uncover the hidden history of the city</h1>
+        <p>You'll play a game, like answering trivia questions, to learn more about your favorite places and earn a badge commemmorating your success.</p>
     </div>
 </section>
 <!-- FEATURED 4  -->
 <section class="attribute a4bute">
-    <div class="att-pic">
-        <img class="heroImage" src="images/home.png">
+    <div class="att-pic4">
+        <img class="heroImage" src="images/Leaderboard_Screen.PNG">
     </div>
-    <div class="att4-words">
-        <h1>This is a heading for a description</h1>
-        <p>And these are all the lil details about this feature!</p>
+    <div class="att4-words mobileWords">
+        <h1>Go from novice to full-fledged New Yorker</h1>
+        <p>Engage in some fun and friendly competition and don't miss the chance to flash your badges and showcase your new knowledge of the greatest city on Earth!</p>
     </div>
 </section>
+<!-- LAST CTA SECTION -->
+<section class="joinNow">
+    <h1>So what are you waiting for?</h1>
+    <p>Sign up and earn up to <span id="fifteen">15%</span> off at one of our partnered destinations!</p>
+    <div class="btndiv2">
+        <button id="endbtn" onclick="myFunction()">Join The Hunt</button>
+    </div>
+
+</section>
 <!-- FOOTER SECTION -->
-<footer class="footer">
+<footer id="footer">
+<div class="symbols">
+    <img id="git" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png">
+    <img id="fb" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png">
+    <img id="insta" src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png">
+    <img id="pint" src="https://www.citypng.com/public/uploads/preview/-11594987359wsqhsnkcge.png">
+</div>
+<div class="footerWords">
+<p id="rights">All Rights Reserved</p>
+<p>www.thehuntnyc.com</p>
+</div>
+<p id="fun">Don't miss out on the fun! Connect with us online to learn more today!</p>
 
 </footer>
 </body>
